@@ -38,8 +38,7 @@ public class Money {
     @return The sum of the calling Money object
     and the parameter Money object.
      */
-    public Money add(Money otherAmount)
-    {
+    public Money add(Money otherAmount) {
         Money sum = new Money(0);
         sum.cents = this.cents + otherAmount.cents;
         long carryDollars = sum.cents / 100;
@@ -55,8 +54,7 @@ public class Money {
     @return The difference between the calling Money
     object and the parameter Money object.
      */
-    public Money subtract (Money amount)
-    {
+    public Money subtract (Money amount) {
         Money difference = new Money(0);
         if (this.cents < amount.cents)
         {
@@ -72,16 +70,15 @@ public class Money {
      @param amount The amount of money to compare against.
      @return -1 if the dollars and the cents of the
      calling object are less than the dollars and
-     the cents of the parameter object.
+     the cents of the parameter object.<p>
      0 if the dollars and the cents of the calling
      object are equal to the dollars and cents of
-     the parameter object.
+     the parameter object.<p>
      1 if the dollars and the cents of the calling
      object are more than the dollars and the
      cents of the parameter object.
      */
-    public int compareTo(Money amount)
-    {
+    public int compareTo(Money amount) {
         int value;
         if(this.dollars < amount.dollars)
             value = -1;
@@ -96,7 +93,17 @@ public class Money {
         return value;
     }
 // TASK #2
-// Document and write an equals method
+
+    /**
+     * The Equals Method
+     * @param money
+     * @return true if the dollars and the cents of the calling object are the same as the ones of the parameter object.<p>
+     *         false if otherwise.
+     */
+    public boolean equals(Money money) {
+        Money other = (Money) money;
+        return this.dollars == other.dollars && this.cents == other.cents;
+    }
 
 // Document and write a toString method
 }

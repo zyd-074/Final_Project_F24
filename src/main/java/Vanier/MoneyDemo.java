@@ -5,8 +5,7 @@ package Vanier;
  */
 public class MoneyDemo
 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Named constants
         final int BEGINNING = 500; // Beginning balance
         final Money FIRST_AMOUNT  = new Money(10.02);
@@ -47,7 +46,7 @@ public class MoneyDemo
         }
         else {
         // The third and first amounts are not equal.
-            System.out.println(THIRD_AMOUNT + " does not equal " + FIRST_AMOUNT);
+        System.out.println(THIRD_AMOUNT + " does not equal " + FIRST_AMOUNT);
         }
     }
 }
