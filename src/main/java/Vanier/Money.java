@@ -3,8 +3,7 @@ package Vanier;
 /**
     This class represents non-negative amounts of money.
  */
-public class Money
-{
+public class Money {
     // The number of dollars
     private long dollars;
     // The number of cents
@@ -13,23 +12,26 @@ public class Money
      Constructor
      @param amount The amount in decimal format.
      */
-    public Money(double amount)
-    {
-        if (amount < 0)
-        {
-            System.out.println("Error: Negative amounts " +
-                    "of money are not allowed.");
+    public Money(double amount) {
+        if (amount < 0) {
+            System.out.println("Error: Negative amounts of money are not allowed.");
             System.exit(0);
         }
-        else
-        {
+        else {
             long allCents = Math.round(amount * 100);
             dollars = allCents / 100;
             cents = allCents % 100;
         }
     }
-    // ADD LINES FOR TASK #1 HERE
-    // Document and write a copy constructor
+    // TASK #1
+    /**
+     * Copy Constructor
+     * @param other A copy of the value of the instance variable from the object to the new object
+     */
+    public Money(Money other){
+        this.dollars = other.dollars;
+        this.cents = other.cents;
+    }
     /**
     The add method
     @param otherAmount The amount of money to add.
@@ -93,7 +95,8 @@ public class Money
             value = 0;
         return value;
     }
-// ADD LINES FOR TASK #2 HERE
+// TASK #2
 // Document and write an equals method
+
 // Document and write a toString method
 }
