@@ -112,7 +112,6 @@ public class Money {
      * @return A String in the format of "$dollars.cents"
      */
     public String toString() {
-        Money display = new Money(0);
         //Check first if cents has less than 10
         String stringCents; //Define a String for cents before the check
         if (this.cents < 10){
