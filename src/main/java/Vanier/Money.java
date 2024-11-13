@@ -26,11 +26,12 @@ public class Money {
     // TASK #1
     /**
      * Copy Constructor
-     * @param other A copy of the value of the instance variable from the object to the new object
+     * @param otherMoney A copy of the value of the instance variable from the object to the new object
      */
-    public Money(Money other){
-        this.dollars = other.dollars;
-        this.cents = other.cents;
+    public Money(Money otherMoney){
+        //Copy the value of the dollars and cents from the object called
+        this.dollars = otherMoney.dollars;
+        this.cents = otherMoney.cents;
     }
     /**
     The add method
@@ -93,17 +94,34 @@ public class Money {
         return value;
     }
 // TASK #2
-
+// Equals Method
     /**
      * The Equals Method
-     * @param money
+     * @param userMoney the object which we want to compare to the parameter
      * @return true if the dollars and the cents of the calling object are the same as the ones of the parameter object.<p>
      *         false if otherwise.
      */
-    public boolean equals(Money money) {
-        Money other = (Money) money;
-        return this.dollars == other.dollars && this.cents == other.cents;
+    public boolean equals(Money userMoney) {
+        //Return true if these dollars and cents has the same value as the object we want to compare with
+        return this.dollars == userMoney.dollars && this.cents == userMoney.cents;
     }
+// toString method
 
-// Document and write a toString method
+    /**
+     * The toString Method
+     * @return A String in the format of "$dollars.cents"
+     */
+    public String toString() {
+        Money display = new Money(0);
+        //Check first if cents has less than 10
+        String stringCents; //Define a String for cents before the check
+        if (this.cents < 10){
+            stringCents = "0" + this.cents;
+        }
+        else {
+            stringCents = "" + this.cents;
+        }
+        //Return the String in the format of "$dollars.cents"
+        return "$" + this.dollars + "." + stringCents;
+    }
 }
