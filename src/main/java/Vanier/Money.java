@@ -8,6 +8,7 @@ public class Money {
     private long dollars;
     // The number of cents
     private long cents;
+
     /**
      Constructor
      @param amount The amount in decimal format.
@@ -97,7 +98,7 @@ public class Money {
 // Equals Method
     /**
      * The Equals Method
-     * @param userMoney the object which we want to compare to the parameter
+     * @param userMoney the object which we want to compare to the original object
      * @return true if the dollars and the cents of the calling object are the same as the ones of the parameter object.<p>
      *         false if otherwise.
      */
