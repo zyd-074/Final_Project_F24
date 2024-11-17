@@ -1,4 +1,4 @@
-package Vanier;
+package Task2;
 
 /**
  This program demonstrates the Money class.
