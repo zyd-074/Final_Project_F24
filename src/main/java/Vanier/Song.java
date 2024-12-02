@@ -1,9 +1,8 @@
 package Vanier;
 
 /*
-    This class stores data about a song.
+This class stores data about a song.
  */
-
 public class Song {
     private String title;   // The song's title
     private String artist;  // The song's artist
@@ -18,6 +17,7 @@ public class Song {
         this.title = title;
         this.artist = artist;
     }
+
     /**
      The toString method
      @return A String object containing the name

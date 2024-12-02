@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ce490d-7b94-42fd-b718-b49a52e7ec2f" name="Changes" comment="Comment File (Task2)" />
+    <list default="true" id="ba0dafd8-b3e5-403e-bd78-a51b52fac308" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Classics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Classics.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/CompactDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/CompactDisc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Song.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,156 +23,22 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="Part_3" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;zyd-074&quot;
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CompactDisc.executor": "Run",
+    "git-widget-placeholder": "Task3__Part3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/zyd-074/Final_Project_F24.git&quot;,
-    &quot;accountId&quot;: &quot;57c3f5d5-9ba9-4687-86ee-6e72ae5a213e&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
-  <component name="ProjectId" id="2p7wfAA7CViwg4XG0DPB9h1Rcit" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AverageDrive.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Task3__Part3&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\CnFig\OneDrive\文档\GitHub\Final_Project_F24\src\main\java\Vanier" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Final_Project_F24" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Final_Project_F24" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+}]]></component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="38ce490d-7b94-42fd-b718-b49a52e7ec2f" name="Changes" comment="" />
-      <created>1732130522481</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1732130522481</updated>
-      <workItem from="1732130523586" duration="8734000" />
-      <workItem from="1732502653827" duration="1917000" />
-    </task>
-    <task id="LOCAL-00001" summary="Creation Class Average">
-      <option name="closed" value="true" />
-      <created>1732130793988</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1732130793988</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Update Average class">
-      <option name="closed" value="true" />
-      <created>1732139161038</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1732139161038</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Creation + Done AverageDrive Class">
-      <option name="closed" value="true" />
-      <created>1732139191795</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1732139191795</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Comment code + Fixed bug">
-      <option name="closed" value="true" />
-      <created>1732503378268</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1732503378268</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Demo File">
-      <option name="closed" value="true" />
-      <created>1732503495924</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1732503495925</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Additional File">
-      <option name="closed" value="true" />
-      <created>1732503574444</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1732503574444</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Comment File (Task2)">
-      <option name="closed" value="true" />
-      <created>1732503646595</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1732503646595</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creation Class Average" />
-    <MESSAGE value="Update Average class" />
-    <MESSAGE value="Creation + Done AverageDrive Class" />
-    <MESSAGE value="Comment code + Fixed bug" />
-    <MESSAGE value="Demo File" />
-    <MESSAGE value="Additional File" />
-    <MESSAGE value="Comment File (Task2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comment File (Task2)" />
   </component>
 </project>
