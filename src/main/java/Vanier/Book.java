@@ -18,7 +18,8 @@ public class Book {
     public Book(String title) {
         this.title = title;
     }
-    public Book(String title, String author, double price, String publisher, String isbn) {
+    public Book(String title, String author, double price,
+                String publisher, String isbn) {
         this.title = title;
         this.author = author;
         this.price = price;
@@ -39,22 +40,53 @@ public class Book {
         int isbnLength = this.isbn.length();
         switch (isbnLength){
             case 13:
-                return 0;
+                if (this.isbn.indexOf("-") == 1 &&
+                        this.isbn.indexOf("-") == 11 &&
+                        this.isbn.indexOf("-") != 3){
+                    return 0;
+                }
+                else {return -1;}
             case 17:
-                return 1;
+                if (this.isbn.startsWith("978") &&
+                        this.isbn.indexOf("-") == 3 &&
+                        this.isbn.indexOf("-") == 5 &&
+                        this.isbn.indexOf("-") == 15 &&
+                        this.isbn.indexOf("-") != 7){
+                    return 1;
+                }
+                else {return -1;}
             default:
                 return -1;
         }
     }
 
     //To Title Case
-    public String toTitleCase() {}
+    public String toTitleCase() {
+        int i; //made for the loop
+        for (i = 0; i < this.title.length(); i++){
+            if (this.title.charAt(i+1) == ' '){
+                this.title = Character.toUpperCase(this.title.charAt(i)) +
+                        this.title.substring(i+1);
+            }
+        }
+        return this.title;
+    }
 
     //To String
-    public String toString() {}
+    public String toString() {
+        return String.format("%-10s: %s\n%-10s: %s\n%-10s: %.2f\n%-10s: %s\n%-10s: %s",
+                "Title", this.title, "Author", this.author, "Price", this.price,
+                "Publisher", this.publisher, "ISBN", this.isbn);
+    }
 
     //Equals
-    public boolean equals(){}
+    public boolean equals(Book otherBook){
+        return this.title.equals(otherBook.title) &&
+                this.author.equals(otherBook.author) &&
+                this.price == otherBook.price &&
+                this.publisher.equals(otherBook.publisher) &&
+                this.isbn.equals(otherBook.isbn);
+    }
 
     //Clone
     public Book clones(){}
