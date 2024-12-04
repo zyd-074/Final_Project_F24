@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed1b9d4f-96f7-4ec8-838b-dba3705d2b1f" name="Changes" comment="Task #1 (Create File)">
+    <list default="true" id="ed1b9d4f-96f7-4ec8-838b-dba3705d2b1f" name="Changes" comment="Update Methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +71,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Final_Project_F24" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Final_Project_F24" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -91,7 +103,8 @@
       <updated>1733112769584</updated>
       <workItem from="1733112770685" duration="1551000" />
       <workItem from="1733260406588" duration="18000" />
-      <workItem from="1733260468057" duration="5009000" />
+      <workItem from="1733260468057" duration="5100000" />
+      <workItem from="1733275610134" duration="186000" />
     </task>
     <task id="LOCAL-00001" summary="Task #1 (Create File)">
       <option name="closed" value="true" />
@@ -101,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733114268474</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update Methods">
+      <option name="closed" value="true" />
+      <created>1733265551346</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733265551346</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Task #3 Done" />
     <MESSAGE value="Task #1 (Create File)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task #1 (Create File)" />
+    <MESSAGE value="Update Methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Methods" />
   </component>
 </project>

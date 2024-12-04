@@ -89,7 +89,9 @@ public class Book {
     }
 
     //Clone
-    public Book clones(){}
+    public Book clones(Book userBook){
+        return new Book(userBook);
+    }
 
     //Getters
     public String getTitle(){
