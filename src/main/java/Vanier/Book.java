@@ -65,23 +65,29 @@ public class Book {
     //To Title Case
     public Book toTitleCase() {
         int i; //made for the loop
-        String tempTitle = "";
-        String tempAuthor = "";
-        for (i = 0; i < this.title.length(); i++){
-            if (this.title.charAt(i+1) == ' '){
-                tempTitle = Character.toUpperCase(this.title.charAt(i)) +
-                        this.title.substring(i+1);
+        Book tempBook = this.clones();
+        for (i = 1; i < this.title.length(); i++){
+            if (this.title.charAt(i) == ' '){
+                tempBook.title = tempBook.title.substring(0,i+1) + Character.toUpperCase(this.title.charAt(i+1)) +
+                        this.title.substring(i+2);
+            }
+            else if(i-1 == 0){
+                tempBook.title = Character.toUpperCase(this.title.charAt(0)) +
+                        this.title.substring(1);
             }
         }
-        for (i = 0; i < this.author.length(); i++){
-            if (this.author.charAt(i) == ' '){
-                tempAuthor = Character.toUpperCase(this.author.charAt(i)) +
-                        this.author.substring(i+1);
+        int j; //made for loop
+        for (j = 1; j < this.author.length(); j++){
+            if (this.author.charAt(j) == ' '){
+                tempBook.author = tempBook.author.substring(0,j+1) + Character.toUpperCase(this.author.charAt(j+1)) +
+                        this.author.substring(j+2);
+            }
+            else if(j-1 == 0){
+                tempBook.author = Character.toUpperCase(this.author.charAt(0)) +
+                        this.author.substring(1);
             }
         }
-        this.title = tempTitle;
-        this.author = tempAuthor;
-        return this;
+        return tempBook;
     }
 
     //To String
@@ -101,8 +107,14 @@ public class Book {
     }
 
     //Clone
-    public Book clones(Book userBook){
-        return new Book(userBook);
+    public Book clones(){
+        Book cloneBook = new Book();
+        cloneBook.title = this.title;
+        cloneBook.author = this.author;
+        cloneBook.price = this.price;
+        cloneBook.publisher = this.publisher;
+        cloneBook.isbn = this.isbn;
+        return cloneBook;
     }
 
     //Getters
