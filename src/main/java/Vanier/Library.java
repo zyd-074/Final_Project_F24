@@ -6,9 +6,20 @@ import java.util.ArrayList;
  */
 
 public class Library {
-    ArrayList<Book> books = new ArrayList<Book>();
+    private ArrayList<Book> books = new ArrayList<Book>();
 
-    public Library() {}
+    public Library() {
+        Book book1 = new Book();
+        Book book2 = new Book();
+        Book book3 = new Book();
+        Book book4 = new Book();
+        Book book5 = new Book();
+        this.books.add(book1);
+        this.books.add(book2);
+        this.books.add(book3);
+        this.books.add(book4);
+        this.books.add(book5);
+    }
     public Library(ArrayList<Book> books) {
         this.books = books;
     }
@@ -22,6 +33,9 @@ public class Library {
             if (this.books.get(i).getTitle().toLowerCase().contains(keyword.toLowerCase())) {
                 withKeyword.add(this.books.get(i));
             }
+            if (this.books.get(i).getAuthor().toLowerCase().contains(keyword.toLowerCase())) {
+                withKeyword.add(this.books.get(i));
+            }
         }
         return withKeyword;
     }
@@ -31,8 +45,8 @@ public class Library {
     public String toString() {
         String output = "";
         for (int i = 0; i < this.books.size(); i++) {
-            String temp = this.books.get(i).getTitle();
-            output += temp + "\n";
+            String temp = String.format("%s%d:\n%s", "Book",(i+1), this.books.get(i).toString());
+            output += temp;
         }
         return output;
     }
