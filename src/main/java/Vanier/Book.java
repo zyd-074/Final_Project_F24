@@ -39,9 +39,11 @@ public class Book {
     //Check ISBN Status
     public int checkIsbnStatus() {
         int isbnLength = this.isbn.length();
+        int numOfDash = this.isbn.length() - this.isbn.replaceAll("-","").length();
         switch (isbnLength){
             case 13:
-                if (this.isbn.charAt(1) == '-' &&
+                if (numOfDash == 3 &&
+                        this.isbn.charAt(1) == '-' &&
                         this.isbn.charAt(11) == '-' &&
                         this.isbn.charAt(2) != '-' &&
                         this.isbn.charAt(3) != '-'){
@@ -49,7 +51,8 @@ public class Book {
                 }
                 else {return -1;}
             case 17:
-                if (this.isbn.startsWith("978") &&
+                if (numOfDash == 4 &&
+                        this.isbn.startsWith("978") &&
                         this.isbn.charAt(3) == '-' &&
                         this.isbn.charAt(5) == '-' &&
                         this.isbn.charAt(15) == '-' &&

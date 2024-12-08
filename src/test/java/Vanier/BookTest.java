@@ -19,6 +19,16 @@ class BookTest {
     }
 
     /**
+     * Testing if it recognizes and isbn without enough dashes (invalid isbn) for ISBN10
+     */
+    @Test
+    void isbn10ShouldBeValidNum2() {
+        Book testBookInv10 = new Book();
+        testBookInv10.setIsbn("1-111111111-1");
+        assertEquals(-1, testBookInv10.checkIsbnStatus());
+    }
+
+    /**
      * Testing if it recognizes a usual isbn 10
      */
     @Test
@@ -46,6 +56,16 @@ class BookTest {
         Book testBook2Inv13 = new Book();
         testBook2Inv13.setIsbn("978-2-4-5384610-9");
         assertEquals(-1, testBook2Inv13.checkIsbnStatus());
+    }
+
+    /**
+     * Testing if it recognizes an isbn 13 without enough dashes (invalid isbn) for ISBN13
+     */
+    @Test
+    void isbn13ShouldBeInvalid3() {
+        Book testBook = new Book();
+        testBook.setIsbn("978-1-111111111-1");
+        assertEquals(-1, testBook.checkIsbnStatus());
     }
 
     /**
@@ -111,5 +131,6 @@ class BookTest {
         assertEquals("Publisher", testGetters.getPublisher());
         assertEquals("1-1111-1111-1", testGetters.getIsbn());
     }
+
     //Setters were tested during other tests
 }
