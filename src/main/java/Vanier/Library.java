@@ -39,8 +39,8 @@ public class Library {
         }
         return withKeyword;
     }
-    public boolean equals(ArrayList<Book> otherBooks) {
-        return this.books.equals(otherBooks);
+    public boolean equals(Library otherLib) {
+        return this.books.equals(otherLib.books);
     }
     public String toString() {
         String output = "";
