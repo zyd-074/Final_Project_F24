@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed1b9d4f-96f7-4ec8-838b-dba3705d2b1f" name="Changes" comment="Update Library Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,9 @@
     &quot;accountId&quot;: &quot;57c3f5d5-9ba9-4687-86ee-6e72ae5a213e&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -47,15 +49,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.BookTest.executor": "Run",
     "JUnit.BookTest.isbn10ShouldBeInvalid.executor": "Run",
     "JUnit.BookTest.isbn10ShouldBeInvalid1.executor": "Coverage",
     "JUnit.BookTest.isbn10ShouldBeValid.executor": "Run",
+    "JUnit.BookTest.isbn10ShouldBeValidNum2.executor": "Coverage",
     "JUnit.BookTest.isbn13ShouldBeInvalid.executor": "Run",
     "JUnit.BookTest.isbn13ShouldBeInvalid1.executor": "Run",
     "JUnit.BookTest.isbn13ShouldBeInvalid2.executor": "Run",
+    "JUnit.BookTest.isbn13ShouldBeInvalid3.executor": "Coverage",
     "JUnit.BookTest.isbn13ShouldBeValid.executor": "Run",
     "JUnit.BookTest.isbnShouldBeInvalid.executor": "Run",
     "JUnit.BookTest.isbnShouldBeInvalid1.executor": "Run",
+    "JUnit.BookTest.testEqualsAndClone.executor": "Run",
+    "JUnit.BookTest.testGetters.executor": "Run",
+    "JUnit.BookTest.testToString.executor": "Run",
+    "JUnit.BookTest.testToTitleCase.executor": "Run",
+    "JUnit.LibraryTest.searchBook.executor": "Run",
+    "JUnit.LibraryTest.testEquals.executor": "Run",
+    "JUnit.LibraryTest.testGetArraylist.executor": "Run",
+    "JUnit.LibraryTest.testToString.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -79,7 +92,7 @@
       <recent name="Vanier" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookTest.isbn10ShouldBeInvalid">
+  <component name="RunManager" selected="JUnit.LibraryTest.testGetArraylist">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Final_Project_F24" />
       <method v="2">
@@ -93,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.isbn10ShouldBeInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookTest.isbn13ShouldBeInvalid3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Part4" />
       <extension name="coverage">
         <pattern>
@@ -103,13 +116,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Vanier" />
       <option name="MAIN_CLASS_NAME" value="Vanier.BookTest" />
-      <option name="METHOD_NAME" value="isbn10ShouldBeInvalid" />
+      <option name="METHOD_NAME" value="isbn13ShouldBeInvalid3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.isbn13ShouldBeInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.searchBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Part4" />
       <extension name="coverage">
         <pattern>
@@ -118,14 +131,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Vanier" />
-      <option name="MAIN_CLASS_NAME" value="Vanier.BookTest" />
-      <option name="METHOD_NAME" value="isbn13ShouldBeInvalid" />
+      <option name="MAIN_CLASS_NAME" value="Vanier.LibraryTest" />
+      <option name="METHOD_NAME" value="searchBook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.isbn13ShouldBeInvalid1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Part4" />
       <extension name="coverage">
         <pattern>
@@ -134,14 +147,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Vanier" />
-      <option name="MAIN_CLASS_NAME" value="Vanier.BookTest" />
-      <option name="METHOD_NAME" value="isbn13ShouldBeInvalid1" />
+      <option name="MAIN_CLASS_NAME" value="Vanier.LibraryTest" />
+      <option name="METHOD_NAME" value="testEquals" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.isbn13ShouldBeInvalid2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.testGetArraylist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Part4" />
       <extension name="coverage">
         <pattern>
@@ -150,14 +163,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Vanier" />
-      <option name="MAIN_CLASS_NAME" value="Vanier.BookTest" />
-      <option name="METHOD_NAME" value="isbn13ShouldBeInvalid2" />
+      <option name="MAIN_CLASS_NAME" value="Vanier.LibraryTest" />
+      <option name="METHOD_NAME" value="testGetArraylist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.isbn13ShouldBeValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Part4" />
       <extension name="coverage">
         <pattern>
@@ -166,8 +179,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Vanier" />
-      <option name="MAIN_CLASS_NAME" value="Vanier.BookTest" />
-      <option name="METHOD_NAME" value="isbn13ShouldBeValid" />
+      <option name="MAIN_CLASS_NAME" value="Vanier.LibraryTest" />
+      <option name="METHOD_NAME" value="testToString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookTest.isbn10ShouldBeInvalid" />
-        <item itemvalue="JUnit.BookTest.isbn13ShouldBeInvalid1" />
-        <item itemvalue="JUnit.BookTest.isbn13ShouldBeValid" />
-        <item itemvalue="JUnit.BookTest.isbn13ShouldBeInvalid2" />
-        <item itemvalue="JUnit.BookTest.isbn13ShouldBeInvalid" />
+        <item itemvalue="JUnit.LibraryTest.testGetArraylist" />
+        <item itemvalue="JUnit.LibraryTest.testToString" />
+        <item itemvalue="JUnit.LibraryTest.testEquals" />
+        <item itemvalue="JUnit.LibraryTest.searchBook" />
+        <item itemvalue="JUnit.BookTest.isbn13ShouldBeInvalid3" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +229,9 @@
       <workItem from="1733260406588" duration="18000" />
       <workItem from="1733260468057" duration="5100000" />
       <workItem from="1733275610134" duration="186000" />
+      <workItem from="1733342524176" duration="3930000" />
+      <workItem from="1733623671066" duration="2279000" />
+      <workItem from="1733683285094" duration="15294000" />
     </task>
     <task id="LOCAL-00001" summary="Task #1 (Create File)">
       <option name="closed" value="true" />
@@ -241,7 +257,71 @@
       <option name="project" value="LOCAL" />
       <updated>1733335876785</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ISBN Tests + Modified toTitleCase method">
+      <option name="closed" value="true" />
+      <created>1733337412932</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733337412932</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Additional Files">
+      <option name="closed" value="true" />
+      <created>1733337424537</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733337424537</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update Book Class">
+      <option name="closed" value="true" />
+      <created>1733683637155</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733683637155</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Test file for all methods in Book class">
+      <option name="closed" value="true" />
+      <created>1733684882571</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733684882571</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Test file for all methods in Book class">
+      <option name="closed" value="true" />
+      <created>1733684977212</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733684977212</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update checkIsbnStatus + testProgram">
+      <option name="closed" value="true" />
+      <created>1733686062745</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733686062745</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update Library Class">
+      <option name="closed" value="true" />
+      <created>1733697073658</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733697073658</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update Library Class">
+      <option name="closed" value="true" />
+      <created>1733697662458</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733697662458</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +331,11 @@
     <MESSAGE value="Task #3 Done" />
     <MESSAGE value="Task #1 (Create File)" />
     <MESSAGE value="Update Methods" />
+    <MESSAGE value="ISBN Tests + Modified toTitleCase method" />
+    <MESSAGE value="Additional Files" />
+    <MESSAGE value="Update Book Class" />
+    <MESSAGE value="Test file for all methods in Book class" />
+    <MESSAGE value="Update checkIsbnStatus + testProgram" />
     <MESSAGE value="Update Library Class" />
     <option name="LAST_COMMIT_MESSAGE" value="Update Library Class" />
   </component>
@@ -259,14 +344,29 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Vanier/BookTest.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="4" />
+          <line>35</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Final_Project_F24$BookTest_isbn10ShouldBeValidNum2.ic" NAME="BookTest.isbn10ShouldBeValidNum2 Coverage Results" MODIFIED="1733685653537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>Vanier.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Final_Project_F24$BookTest_testToTitleCase.ic" NAME="BookTest.testToTitleCase Coverage Results" MODIFIED="1733344539066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>Vanier.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Final_Project_F24$BookTest_isbn13ShouldBeInvalid3.ic" NAME="BookTest.isbn13ShouldBeInvalid3 Coverage Results" MODIFIED="1733686002915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>Vanier.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Final_Project_F24$BookTest_isbn10ShouldBeInvalid1.ic" NAME="BookTest.isbn10ShouldBeInvalid1 Coverage Results" MODIFIED="1733335593901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>Vanier.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Final_Project_F24$BookTest_testToString.ic" NAME="BookTest.testToString Coverage Results" MODIFIED="1733345711713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>Vanier.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Final_Project_F24$LibraryTest_testToString.ic" NAME="LibraryTest.testToString Coverage Results" MODIFIED="1733699669975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>Vanier.*</FILTER>
     </SUITE>
   </component>
