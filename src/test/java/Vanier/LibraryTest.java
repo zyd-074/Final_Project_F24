@@ -10,6 +10,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
 
+    /**
+     * Test if the Books could be searched properly
+     */
     @Test
     void testSearchBook() {
         ArrayList<Book> testList = new ArrayList<>();
@@ -26,6 +29,9 @@ class LibraryTest {
         assertEquals(expectedList2 ,testLib.searchBook("plato"));
     }
 
+    /**
+     * Test if the equal method works properly, result should be true
+     */
     @Test
     void testEquals() {
         ArrayList<Book> testList = new ArrayList<>();
@@ -38,6 +44,9 @@ class LibraryTest {
         assertTrue(testLib.equals(testLib2));
     }
 
+    /**
+     * Test the to String method, result should be the same as expected
+     */
     @Test
     void testToString() {
         Library testLib = new Library();
@@ -53,6 +62,9 @@ class LibraryTest {
         assertEquals(expectedString, testLib.toString());
     }
 
+    /**
+     * Test the Getter by expecting the same String as what it should get
+     */
     @Test
     void testGetArraylist() {
         Library testLib = new Library();

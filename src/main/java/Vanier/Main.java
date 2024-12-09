@@ -5,9 +5,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args)throws IOException {
-        Library mainLib = new Library();    //Create Library
-        mainLib.getArraylist().clear();     //Clear Arraylist for next step
-        Scanner txtFile = new Scanner(new File("Books.txt"));   //Scan The initial book list
+        //Create Library
+        Library mainLib = new Library();
+        //Clear Arraylist for next step
+        mainLib.getArraylist().clear();
+        //Scan The initial book list
+        Scanner txtFile = new Scanner(new File("Books.txt"));
         //Initial Params
         String title;
         String author;
@@ -26,21 +29,26 @@ public class Main {
             isbn = txtFile.nextLine();
             mainBooks.add(new Book(title, author, price, publisher, isbn));
         }
+        //Set the Library with the books that we just added from the file
         mainLib.setArrayList(mainBooks);
 
+        //Create Scanner
         Scanner user = new Scanner(System.in);
+
+        //Ask user for the first operation to do
         System.out.println("Library Service\n1. Search for a Book\n2. Add a book\n3. Remove a book\n4. Modify a book\n5. Book list summary\nPress 0 to quit program");
         int choice = user.nextInt();
         user.nextLine();
+
         while (choice != 0 && choice <= 5) {
             switch (choice) {
-                case 1:
+                case 1: //Search a book
                     System.out.print("Search bar:");
                     String searchBar = user.nextLine();
                     Library result = new Library(mainLib.searchBook(searchBar));
                     System.out.print(result);
                     break;
-                case 2:
+                case 2: //Add a book
                     Book newBook = new Book();
                     System.out.println("What is the title of the Book?");
                     newBook.setTitle(user.nextLine());
@@ -60,7 +68,7 @@ public class Main {
                     System.out.println("A new book has been created: \n" + newBook.toTitleCase().toString() + "\n");
                     mainLib.getArraylist().add(newBook.toTitleCase());
                     break;
-                case 3:
+                case 3: //Remove a book from list
                     System.out.println("Current book list:\n");
                     System.out.print(mainLib);
                     System.out.println("Which book would you like to remove?");
@@ -69,7 +77,7 @@ public class Main {
                     mainLib.getArraylist().remove((removeChoice - 1));
                     System.out.println("Book " + removeChoice + " has been removed");
                     break;
-                case 4:
+                case 4: //Modify a book
                     System.out.println("Current book list:\n");
                     System.out.print(mainLib);
                     System.out.println("Which book would you like to update?");
@@ -81,7 +89,7 @@ public class Main {
                         case "title":
                             System.out.println("What is the new title of the Book?");
                             String newTitle = user.nextLine();
-                            Book updateTitle = new Book(mainLib.getArraylist().get(updateChoice - 1));
+                            Book updateTitle = mainLib.getArraylist().get(updateChoice - 1).clone();
                             updateTitle.setTitle(newTitle);
                             mainLib.getArraylist().set((updateChoice - 1), updateTitle.toTitleCase());
                             System.out.println("Title updated successfully");
@@ -89,7 +97,7 @@ public class Main {
                         case "author":
                             System.out.println("What is the new author of the Book?");
                             String newAuthor = user.nextLine();
-                            Book updateAuthor = new Book(mainLib.getArraylist().get(updateChoice - 1));
+                            Book updateAuthor = mainLib.getArraylist().get(updateChoice - 1).clone();
                             updateAuthor.setAuthor(newAuthor);
                             mainLib.getArraylist().set((updateChoice - 1), updateAuthor.toTitleCase());
                             System.out.println("Author updated successfully");
@@ -98,7 +106,7 @@ public class Main {
                             System.out.println("What is the new price of the Book?");
                             double newPrice = user.nextDouble();
                             user.nextLine();
-                            Book updatePrice = new Book(mainLib.getArraylist().get(updateChoice - 1));
+                            Book updatePrice = mainLib.getArraylist().get(updateChoice - 1).clone();
                             updatePrice.setPrice(newPrice);
                             mainLib.getArraylist().set((updateChoice - 1), updatePrice.toTitleCase());
                             System.out.println("Price updated successfully");
@@ -106,7 +114,7 @@ public class Main {
                         case "publisher":
                             System.out.println("What is the new publisher of the Book?");
                             String newPublisher = user.nextLine();
-                            Book updatePublisher = new Book(mainLib.getArraylist().get(updateChoice - 1));
+                            Book updatePublisher = mainLib.getArraylist().get(updateChoice - 1).clone();
                             updatePublisher.setPublisher(newPublisher);
                             mainLib.getArraylist().set((updateChoice - 1), updatePublisher.toTitleCase());
                             System.out.println("Publisher updated successfully");
@@ -114,7 +122,7 @@ public class Main {
                         case "isbn":
                             System.out.println("What is the new isbn of the Book?");
                             String newIsbn = user.nextLine();
-                            Book updateIsbn = new Book(mainLib.getArraylist().get(updateChoice - 1));
+                            Book updateIsbn = mainLib.getArraylist().get(updateChoice - 1).clone();
                             updateIsbn.setIsbn(newIsbn);
                             mainLib.getArraylist().set((updateChoice - 1), updateIsbn.toTitleCase());
                             System.out.println("Isbn updated successfully");
@@ -123,7 +131,7 @@ public class Main {
                             break;
                     }
                     break;
-                case 5:
+                case 5: //Show all books
                     System.out.println("Current book list:\n");
                     System.out.print(mainLib);
                     break;

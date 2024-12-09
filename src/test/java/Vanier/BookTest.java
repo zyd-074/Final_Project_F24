@@ -115,7 +115,7 @@ class BookTest {
     @Test
     void testEqualsAndClone() {
         Book testOriginal = new Book("Title","Author",9.99,"Publisher","1-1111-1111-1");
-        Book testClone = testOriginal.clones();
+        Book testClone = testOriginal.clone();
         assertTrue(testClone.equals(testOriginal));
     }
 

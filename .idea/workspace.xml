@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed1b9d4f-96f7-4ec8-838b-dba3705d2b1f" name="Changes" comment="Update XML File">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Vanier/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Vanier/BookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Vanier/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Vanier/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,44 +51,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.BookTest.executor": "Run",
-    "JUnit.BookTest.isbn10ShouldBeInvalid.executor": "Run",
-    "JUnit.BookTest.isbn10ShouldBeInvalid1.executor": "Coverage",
-    "JUnit.BookTest.isbn10ShouldBeValid.executor": "Run",
-    "JUnit.BookTest.isbn10ShouldBeValidNum2.executor": "Coverage",
-    "JUnit.BookTest.isbn13ShouldBeInvalid.executor": "Run",
-    "JUnit.BookTest.isbn13ShouldBeInvalid1.executor": "Run",
-    "JUnit.BookTest.isbn13ShouldBeInvalid2.executor": "Run",
-    "JUnit.BookTest.isbn13ShouldBeInvalid3.executor": "Coverage",
-    "JUnit.BookTest.isbn13ShouldBeValid.executor": "Run",
-    "JUnit.BookTest.isbnShouldBeInvalid.executor": "Run",
-    "JUnit.BookTest.isbnShouldBeInvalid1.executor": "Run",
-    "JUnit.BookTest.testEqualsAndClone.executor": "Run",
-    "JUnit.BookTest.testGetters.executor": "Run",
-    "JUnit.BookTest.testToString.executor": "Run",
-    "JUnit.BookTest.testToTitleCase.executor": "Run",
-    "JUnit.LibraryTest.searchBook.executor": "Run",
-    "JUnit.LibraryTest.testEquals.executor": "Run",
-    "JUnit.LibraryTest.testGetArraylist.executor": "Run",
-    "JUnit.LibraryTest.testToString.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "Part__4",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.isbn10ShouldBeInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.isbn10ShouldBeInvalid1.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.BookTest.isbn10ShouldBeValid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.isbn10ShouldBeValidNum2.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.BookTest.isbn13ShouldBeInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.isbn13ShouldBeInvalid1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.isbn13ShouldBeInvalid2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.isbn13ShouldBeInvalid3.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.BookTest.isbn13ShouldBeValid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.isbnShouldBeInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.isbnShouldBeInvalid1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.testEqualsAndClone.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.testGetters.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.testToString.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookTest.testToTitleCase.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.searchBook.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.testEquals.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.testGetArraylist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.testToString.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Part__4&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -231,7 +236,7 @@
       <workItem from="1733275610134" duration="186000" />
       <workItem from="1733342524176" duration="3930000" />
       <workItem from="1733623671066" duration="2279000" />
-      <workItem from="1733683285094" duration="24946000" />
+      <workItem from="1733683285094" duration="27556000" />
     </task>
     <task id="LOCAL-00001" summary="Task #1 (Create File)">
       <option name="closed" value="true" />
@@ -377,7 +382,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733712097003</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Update Library Class">
+      <option name="closed" value="true" />
+      <created>1733712257899</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1733712257899</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Update XML File">
+      <option name="closed" value="true" />
+      <created>1733712266740</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1733712266740</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,8 +416,8 @@
     <MESSAGE value="Create Test file for Library" />
     <MESSAGE value="Update additional (xml) file" />
     <MESSAGE value="Main Test File (Workable program file)" />
-    <MESSAGE value="Update Library Class" />
     <MESSAGE value="Update Main program File" />
+    <MESSAGE value="Update Library Class" />
     <MESSAGE value="Update XML File" />
     <option name="LAST_COMMIT_MESSAGE" value="Update XML File" />
   </component>

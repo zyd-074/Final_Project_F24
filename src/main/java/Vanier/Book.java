@@ -5,20 +5,36 @@ package Vanier;
  */
 
 public class Book {
-    //Data field
+    /**
+     * Data Field
+     */
     private String title;
     private String author;
     private double price;
     private String publisher;
     private String isbn;
 
-    //Default Constructor
+    /**
+     * Default Constructor
+     */
     public Book() {}
-    //Constructor with title
+
+    /**
+     * Constructor with title
+     * @param title The title of the Book <p>Note that the rest of the params stay null</p>
+     */
     public Book(String title) {
         this.title = title;
     }
-    //Constructor with all data
+
+    /**
+     * Constructor with all params
+     * @param title Title of the Book
+     * @param author Author of the Book
+     * @param price Price of the Book
+     * @param publisher Publisher of the Book
+     * @param isbn ISBN of the Book
+     */
     public Book(String title, String author, double price,
                 String publisher, String isbn) {
         this.title = title;
@@ -27,7 +43,11 @@ public class Book {
         this.publisher = publisher;
         this.isbn = isbn;
     }
-    //Copy Constructor
+
+    /**
+     * Copy Constructor
+     * @param copyBook The Book to copy from
+     */
     public Book(Book copyBook){
         this.title = copyBook.title;
         this.author = copyBook.author;
@@ -36,7 +56,10 @@ public class Book {
         this.isbn = copyBook.isbn;
     }
 
-    //Check ISBN Status
+    /**
+     * checkIsbnStatus method
+     * @return <p>-1 if ISBN not valid</p>0 if ISBN is a ISBN 10 <p>1 if ISBN is a ISBN 13</p>
+     */
     public int checkIsbnStatus() {
         int isbnLength = this.isbn.length();
         int numOfDash = this.isbn.length() - this.isbn.replaceAll("-","").length();
@@ -65,10 +88,13 @@ public class Book {
         }
     }
 
-    //To Title Case
+    /**
+     * toTitleCase method
+     * @return a Book with the Author and the Title in Title Case format
+     */
     public Book toTitleCase() {
         int i; //made for the loop
-        Book tempBook = this.clones();
+        Book tempBook = this.clone();
         for (i = 1; i < this.title.length(); i++){
             if (this.title.charAt(i) == ' '){
                 tempBook.title = tempBook.title.substring(0,i+1) + Character.toUpperCase(this.title.charAt(i+1)) +
@@ -93,14 +119,21 @@ public class Book {
         return tempBook;
     }
 
-    //To String
+    /**
+     * toSting method
+     * @return A String with all the information of the Book
+     */
     public String toString() {
         return String.format("%-10s: %s\n%-10s: %s\n%-10s: %.2f\n%-10s: %s\n%-10s: %s",
                 "Title", this.title, "Author", this.author, "Price", this.price,
                 "Publisher", this.publisher, "ISBN", this.isbn);
     }
 
-    //Equals
+    /**
+     * equals method
+     * @param otherBook The Book to compare with
+     * @return True if they are equal, false if they aren't
+     */
     public boolean equals(Book otherBook){
         return this.title.equals(otherBook.title) &&
                 this.author.equals(otherBook.author) &&
@@ -109,8 +142,11 @@ public class Book {
                 this.isbn.equals(otherBook.isbn);
     }
 
-    //Clone
-    public Book clones(){
+    /**
+     * clone method
+     * @return A Book with the same params of the one which called it
+     */
+    public Book clone(){
         Book cloneBook = new Book();
         cloneBook.title = this.title;
         cloneBook.author = this.author;
@@ -120,7 +156,10 @@ public class Book {
         return cloneBook;
     }
 
-    //Getters
+    /**
+     * Getters
+     * @return Title, Author, Price, Publisher, or ISBN depending on request
+     */
     public String getTitle(){
         return this.title;
     }
@@ -137,7 +176,10 @@ public class Book {
         return this.isbn;
     }
 
-    //Setters
+    /**
+     * Setters
+     * <p>Set the tile, author, price, publisher, or ISBN depending on the request</p>
+     */
     public void setTitle(String title){
         this.title = title;
     }
