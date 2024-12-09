@@ -38,7 +38,7 @@ public class Main {
                     System.out.print("Search bar:");
                     String searchBar = user.nextLine();
                     Library result = new Library(mainLib.searchBook(searchBar));
-                    System.out.println(result.toString());
+                    System.out.print(result);
                     break;
                 case 2:
                     Book newBook = new Book();
@@ -57,8 +57,77 @@ public class Main {
                         System.out.println("Your ISBN is invalid, please verify and try again");
                         newBook.setIsbn(user.nextLine());
                     }
-                    System.out.println("A new book has been created: " + newBook.toTitleCase().toString() + "\n");
-                    mainBooks.add(newBook.toTitleCase());
+                    System.out.println("A new book has been created: \n" + newBook.toTitleCase().toString() + "\n");
+                    mainLib.getArraylist().add(newBook.toTitleCase());
+                    break;
+                case 3:
+                    System.out.println("Current book list:\n");
+                    System.out.print(mainLib);
+                    System.out.println("Which book would you like to remove?");
+                    int removeChoice = (user.nextInt());
+                    user.nextLine();
+                    mainLib.getArraylist().remove((removeChoice - 1));
+                    System.out.println("Book " + removeChoice + " has been removed");
+                    break;
+                case 4:
+                    System.out.println("Current book list:\n");
+                    System.out.print(mainLib);
+                    System.out.println("Which book would you like to update?");
+                    int updateChoice = (user.nextInt());
+                    user.nextLine();
+                    System.out.println("Which information would you like to update?");
+                    String infoUpdate = user.nextLine().toLowerCase();
+                    switch (infoUpdate) {
+                        case "title":
+                            System.out.println("What is the new title of the Book?");
+                            String newTitle = user.nextLine();
+                            Book updateTitle = new Book(mainLib.getArraylist().get(updateChoice - 1));
+                            updateTitle.setTitle(newTitle);
+                            mainLib.getArraylist().set((updateChoice - 1), updateTitle.toTitleCase());
+                            System.out.println("Title updated successfully");
+                            break;
+                        case "author":
+                            System.out.println("What is the new author of the Book?");
+                            String newAuthor = user.nextLine();
+                            Book updateAuthor = new Book(mainLib.getArraylist().get(updateChoice - 1));
+                            updateAuthor.setAuthor(newAuthor);
+                            mainLib.getArraylist().set((updateChoice - 1), updateAuthor.toTitleCase());
+                            System.out.println("Author updated successfully");
+                            break;
+                        case "price":
+                            System.out.println("What is the new price of the Book?");
+                            double newPrice = user.nextDouble();
+                            user.nextLine();
+                            Book updatePrice = new Book(mainLib.getArraylist().get(updateChoice - 1));
+                            updatePrice.setPrice(newPrice);
+                            mainLib.getArraylist().set((updateChoice - 1), updatePrice.toTitleCase());
+                            System.out.println("Price updated successfully");
+                            break;
+                        case "publisher":
+                            System.out.println("What is the new publisher of the Book?");
+                            String newPublisher = user.nextLine();
+                            Book updatePublisher = new Book(mainLib.getArraylist().get(updateChoice - 1));
+                            updatePublisher.setPublisher(newPublisher);
+                            mainLib.getArraylist().set((updateChoice - 1), updatePublisher.toTitleCase());
+                            System.out.println("Publisher updated successfully");
+                            break;
+                        case "isbn":
+                            System.out.println("What is the new isbn of the Book?");
+                            String newIsbn = user.nextLine();
+                            Book updateIsbn = new Book(mainLib.getArraylist().get(updateChoice - 1));
+                            updateIsbn.setIsbn(newIsbn);
+                            mainLib.getArraylist().set((updateChoice - 1), updateIsbn.toTitleCase());
+                            System.out.println("Isbn updated successfully");
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case 5:
+                    System.out.println("Current book list:\n");
+                    System.out.print(mainLib);
+                    break;
+                default:
                     break;
             }
             System.out.println("Anything else?\n1. Search for a Book\n2. Add a book\n3. Remove a book\n4. Modify a book\n5. Book list summary\nPress 0 to quit program");
