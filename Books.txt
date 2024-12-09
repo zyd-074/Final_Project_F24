@@ -1,0 +1,25 @@
+The Shape Of Things
+Neil Labute
+16.77
+Broadway Play Publishing
+978-0-88145-222-8
+The Apology
+Plato
+10.50
+Broadview Press
+978-1-55481-258-5
+Java: The Complete Reference (Thirteenth Edition)
+Herbert Schildt
+76.95
+McGraw Hill
+978-1-265-05843-2
+Harry Potter And The Philosopher's Stone
+J. K. Rowling
+14.99
+Bloomsbury Publishing
+978-1-4088-5565-2
+The Hunger Games: Volume 1
+Suzanne Collins
+19.99
+Scholastic Inc.
+978-0-439-02352-8
