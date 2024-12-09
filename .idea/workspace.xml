@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed1b9d4f-96f7-4ec8-838b-dba3705d2b1f" name="Changes" comment="Update Library Class">
+    <list default="true" id="ed1b9d4f-96f7-4ec8-838b-dba3705d2b1f" name="Changes" comment="Main Test File (Workable program file)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "JUnit.BookTest.executor": "Run",
     "JUnit.BookTest.isbn10ShouldBeInvalid.executor": "Run",
     "JUnit.BookTest.isbn10ShouldBeInvalid1.executor": "Coverage",
@@ -92,7 +94,7 @@
       <recent name="Vanier" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testGetArraylist">
+  <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Final_Project_F24" />
       <method v="2">
@@ -231,7 +233,7 @@
       <workItem from="1733275610134" duration="186000" />
       <workItem from="1733342524176" duration="3930000" />
       <workItem from="1733623671066" duration="2279000" />
-      <workItem from="1733683285094" duration="15294000" />
+      <workItem from="1733683285094" duration="24540000" />
     </task>
     <task id="LOCAL-00001" summary="Task #1 (Create File)">
       <option name="closed" value="true" />
@@ -321,7 +323,39 @@
       <option name="project" value="LOCAL" />
       <updated>1733697662458</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update Library Class">
+      <option name="closed" value="true" />
+      <created>1733700385066</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733700385066</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Create Test file for Library">
+      <option name="closed" value="true" />
+      <created>1733700399854</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1733700399854</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update additional (xml) file">
+      <option name="closed" value="true" />
+      <created>1733700420177</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1733700420177</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Main Test File (Workable program file)">
+      <option name="closed" value="true" />
+      <created>1733710385251</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1733710385251</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +371,10 @@
     <MESSAGE value="Test file for all methods in Book class" />
     <MESSAGE value="Update checkIsbnStatus + testProgram" />
     <MESSAGE value="Update Library Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Library Class" />
+    <MESSAGE value="Create Test file for Library" />
+    <MESSAGE value="Update additional (xml) file" />
+    <MESSAGE value="Main Test File (Workable program file)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main Test File (Workable program file)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
