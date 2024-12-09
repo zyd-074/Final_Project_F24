@@ -55,10 +55,9 @@ public class Library {
         return this.books;
     }
     //Setter
-    public ArrayList<Book> setArrayList(ArrayList<Book> otherBooks) {
+    public void setArrayList(ArrayList<Book> otherBooks) {
         ArrayList<Book> newList = this.books;
         newList.clear();
         newList.addAll(otherBooks);
-        return newList;
     }
 }
