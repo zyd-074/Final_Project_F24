@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed1b9d4f-96f7-4ec8-838b-dba3705d2b1f" name="Changes" comment="Main Test File (Workable program file)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ed1b9d4f-96f7-4ec8-838b-dba3705d2b1f" name="Changes" comment="Update XML File">
       <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vanier/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vanier/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +231,7 @@
       <workItem from="1733275610134" duration="186000" />
       <workItem from="1733342524176" duration="3930000" />
       <workItem from="1733623671066" duration="2279000" />
-      <workItem from="1733683285094" duration="24540000" />
+      <workItem from="1733683285094" duration="24946000" />
     </task>
     <task id="LOCAL-00001" summary="Task #1 (Create File)">
       <option name="closed" value="true" />
@@ -355,7 +353,31 @@
       <option name="project" value="LOCAL" />
       <updated>1733710385251</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update Library Class">
+      <option name="closed" value="true" />
+      <created>1733712063034</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1733712063034</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update Main program File">
+      <option name="closed" value="true" />
+      <created>1733712076905</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1733712076905</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Update XML File">
+      <option name="closed" value="true" />
+      <created>1733712097003</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1733712097003</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,11 +392,13 @@
     <MESSAGE value="Update Book Class" />
     <MESSAGE value="Test file for all methods in Book class" />
     <MESSAGE value="Update checkIsbnStatus + testProgram" />
-    <MESSAGE value="Update Library Class" />
     <MESSAGE value="Create Test file for Library" />
     <MESSAGE value="Update additional (xml) file" />
     <MESSAGE value="Main Test File (Workable program file)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main Test File (Workable program file)" />
+    <MESSAGE value="Update Library Class" />
+    <MESSAGE value="Update Main program File" />
+    <MESSAGE value="Update XML File" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update XML File" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
