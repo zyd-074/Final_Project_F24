@@ -45,7 +45,7 @@ public class Library {
     public String toString() {
         String output = "";
         for (int i = 0; i < this.books.size(); i++) {
-            String temp = String.format("%s%d:\n%s\n", "Book",i+1, this.books.get(i).toString());
+            String temp = String.format("%s %d:\n%s\n\n", "Book",i+1, this.books.get(i).toString());
             output += temp;
         }
         return output;
